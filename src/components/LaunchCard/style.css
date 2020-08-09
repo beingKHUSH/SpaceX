@@ -1,0 +1,19 @@
+.launch-icon {
+  background-color: #f2f2f2;
+}
+.launch-icon img {
+  width: 100%;
+}
+
+.launch-name {
+  color: #58629d;
+  font-weight: bold;
+}
+
+.launch-ids,
+.launch-year,
+.launch-status,
+.launch-land-status {
+  color: #1d1d1d;
+  font-weight: bold;
+}

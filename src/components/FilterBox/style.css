@@ -1,0 +1,23 @@
+.filter-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.filter-header {
+  text-align: center;
+  border-bottom: 1px solid #5b5656;
+  margin: 15px 20px;
+}
+.btn {
+  color: #010101;
+  background-color: #c5e098;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn .selected {
+  background-color: #7ab802;
+}

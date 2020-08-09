@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.app-loader {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  padding: 5px 5px 20px 10px;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+
+.app-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.p-25 {
+  padding: 25px;
+}
+
+.px-25 {
+  padding: 0 25px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+@media (max-width: 1100px) {
+  .app-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .app-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .app-details {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .app-body {
+    grid-template-columns: 1fr;
+  }
+
+  .app-details {
+    grid-template-columns: 1fr;
+  }
+}
